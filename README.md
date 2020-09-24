@@ -1,2 +1,3 @@
-# my-xamarin-tests
+# Xamarin tests
  
+Test applications developed in Xamarin, to learn

@@ -1,0 +1,118 @@
+﻿<Page
+    x:Class="tresEnRaya.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:tresEnRaya"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style x:Key="caracteristicasBorde" TargetType="Border">
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="10"/>
+        </Style>
+        <Style x:Key="caracteriscasBoton" TargetType="Button">
+            <Setter Property="Height" Value="150"/>
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+    </Page.Resources>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Label="Iniciar"
+                              Icon="play"
+                              Click="AppBarButton_Click_Iniciar"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+    
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBlock x:Name="textoCabecera"
+                       FontSize="45"
+                       Foreground="DarkBlue"
+                       VerticalAlignment="Center"
+                       Text="Turno: "
+                       Margin="0,0,20,0"/>
+            <Image x:Name="imagenCabecera"
+                   Height="70" Width="70"/>
+        </StackPanel>
+        <Grid x:Name="panelBotones"
+              Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Grid.Column="0"
+                    Style="{StaticResource caracteristicasBorde}"/>
+            <Border Grid.Row="0" Grid.Column="1"
+                    Style="{StaticResource caracteristicasBorde}"/>
+            <Border Grid.Row="0" Grid.Column="2"
+                    Style="{StaticResource caracteristicasBorde}"/>
+            <Border Grid.Row="1" Grid.Column="0"
+                    Style="{StaticResource caracteristicasBorde}"/>
+            <Border Grid.Row="1" Grid.Column="1"
+                    Style="{StaticResource caracteristicasBorde}"/>
+            <Border Grid.Row="1" Grid.Column="2"
+                    Style="{StaticResource caracteristicasBorde}"/>
+            <Border Grid.Row="2" Grid.Column="0"
+                    Style="{StaticResource caracteristicasBorde}"/>
+            <Border Grid.Row="2" Grid.Column="1"
+                    Style="{StaticResource caracteristicasBorde}"/>
+            <Border Grid.Row="2" Grid.Column="2"
+                    Style="{StaticResource caracteristicasBorde}"/>
+            <Button x:Name="boton1"
+                    Grid.Row="0" Grid.Column="0"
+                    Style="{StaticResource caracteriscasBoton}"
+                    Click="Button_Click"/>
+            <Button x:Name="boton2"
+                    Grid.Row="0" Grid.Column="1"
+                    Style="{StaticResource caracteriscasBoton}"
+                    Click="Button_Click"/>
+            <Button x:Name="boton3"
+                    Grid.Row="0" Grid.Column="2"
+                    Style="{StaticResource caracteriscasBoton}"
+                    Click="Button_Click"/>
+            <Button x:Name="boton4"
+                    Grid.Row="1" Grid.Column="0"
+                    Style="{StaticResource caracteriscasBoton}"
+                    Click="Button_Click"/>
+            <Button x:Name="boton5"
+                    Grid.Row="1" Grid.Column="1"
+                    Style="{StaticResource caracteriscasBoton}"
+                    Click="Button_Click"/>
+            <Button x:Name="boton6"
+                    Grid.Row="1" Grid.Column="2"
+                    Style="{StaticResource caracteriscasBoton}"
+                    Click="Button_Click"/>
+            <Button x:Name="boton7"
+                    Grid.Row="2" Grid.Column="0"
+                    Style="{StaticResource caracteriscasBoton}"
+                    Click="Button_Click"/>
+            <Button x:Name="boton8"
+                    Grid.Row="2" Grid.Column="1"
+                    Style="{StaticResource caracteriscasBoton}"
+                    Click="Button_Click"/>
+            <Button x:Name="boton9"
+                    Grid.Row="2" Grid.Column="2"
+                    Style="{StaticResource caracteriscasBoton}"
+                    Click="Button_Click"/>
+
+        </Grid>
+    </Grid>
+</Page>

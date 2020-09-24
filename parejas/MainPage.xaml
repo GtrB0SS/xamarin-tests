@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="Parejas.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Parejas"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel Background="White">
+        <TextBlock FontSize="30" 
+                   RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                   RelativePanel.AlignVerticalCenterWithPanel="True">
+            Bienvenido al juego de las parejas!
+        </TextBlock>
+        
+        
+    </RelativePanel>
+    <Page.BottomAppBar>
+        <CommandBar VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Label="Jugar" 
+                              Icon="Play" 
+                              Click="Jugar"/>
+                <AppBarSeparator/>
+                <AppBarButton Label="Ayuda y creadores" 
+                              Icon="Help" 
+                              Click="Ayuda"/>
+                <AppBarSeparator/>
+                <AppBarToggleButton x:Name="opcion" 
+                                    Label="8 Objetos/16 Objetos" 
+                                    Icon="Switch" 
+                                    IsChecked="False"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+</Page>
